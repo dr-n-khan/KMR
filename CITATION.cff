@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated KMR manuscript."
+title: "Decision Support Recommendations for Managing Alzheimer's Dementia"
+type: software
+authors:
+  - family-names: Khan
+    given-names: Nasrullah
+  - family-names: Shah
+    given-names: Zubair
+year: 2026
+license: MIT

@@ -1,0 +1,36 @@
+seed: 42
+data:
+  dir: data/processed/kmr
+  min_user_interactions: 5
+  min_entity_frequency: 3
+  train_ratio: 0.70
+  val_ratio: 0.10
+  test_ratio: 0.20
+model:
+  embedding_dim: 64
+  user_feature_dim: 8
+  item_feature_dim: 8
+  hidden_dim: 64
+  dropout: 0.50
+  kge_weight: 0.001
+  opinion_lambda: 0.30
+  opinion_alpha: 0.50
+  opinion_beta: 0.50
+  sentiment_gamma: 0.10
+  srn_threshold: 0.30
+  srn_hops: 5
+  lambda1: 0.50
+  lambda2: 0.45
+  lambda3: 1.0e-7
+  tau: 0.30
+training:
+  learning_rate: 0.0007
+  batch_size: 1024
+  epochs: 50
+  patience: 8
+  device: auto
+  num_workers: 0
+evaluation:
+  ks: [1, 2, 3, 5, 7, 10]
+  density_ratios: [0.30, 0.40, 0.50, 0.60, 0.70, 0.80]
+output_dir: results/paper
